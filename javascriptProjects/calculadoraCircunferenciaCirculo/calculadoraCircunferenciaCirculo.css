@@ -1,0 +1,38 @@
+body{
+    background-color: aliceblue;
+}
+
+h1{
+    text-align: center;
+}
+
+#calculadora{
+    background-color: antiquewhite;
+    border: 2px solid black;
+    box-shadow: 1px 1px 3px;
+    display: inline-block;
+    margin-left: 37%;
+    margin-top: 10%;
+    height: 300px;
+    width: 400px;
+    text-align: center;
+}
+
+button{
+    background-color: rgb(196, 237, 94);
+    border: none;
+    width: 100px;
+    height: 25px;
+    font-size: 1.1em;
+    transition: 0.5s;
+    margin-top: 5px;
+}
+
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#resultado{
+    margin-top: 50px;
+}
