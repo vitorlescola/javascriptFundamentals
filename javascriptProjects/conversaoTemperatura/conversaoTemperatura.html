@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de temperatura</title>
+    <link rel="stylesheet" href="conversaoTemperatura.css">
+</head>
+<body>
+    <form action="">
+        <h1>Conversão de temperatura</h1>
+        <input id="inserir" type="number" value="0"><br><br>
+
+        <input type="radio" id="paraFer" name="escol">
+        <label for="paraFer">Celsius &#8594; Fahrenheit</label><br>
+
+        <input type="radio" id="paraCel" name="escol">
+        <label for="paraCel">Fahrenheit &#8594; Celsius</label><br><br>
+
+        <button type="button" onclick="converter()">Converter</button>
+        <p id="resultado"></p>
+    </form>
+    <script src="conversaoTemperatura.js"></script>
+</body>
+</html>
