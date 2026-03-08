@@ -245,3 +245,73 @@ let retangulo1=new Retangulo(10, 15);
 console.log(retangulo1.height);  //não é legivel sen utilizar o get
 console.log(retangulo1.width);
 console.log(retangulo1.area);
+
+//destructuring extrai valores de vetores e objetos e coloca eles em variaveis
+console.log("                                                     ");
+//trocar valores
+let a=1;
+let b=2;
+
+[a,b]=[b,a];  //usando destructuring, criando novo vetor, invertendo a ordem
+
+console.log(a);
+console.log(b);
+
+//trocar dois elementos em um vetor
+
+let cores=["vermelho","verde","azul","preto","branco"];
+
+[cores[0],cores[2]]=[cores[2],cores[0]];
+
+console.log(cores);
+
+//atribuir elementos de um vetor para variaves, 
+
+let [um,dois,tres,...resto]=cores;
+
+console.log(um);
+console.log(dois);
+console.log(tres);
+console.log(resto);
+
+//extrair valores de objetos
+
+let {nome,idade,existe}=pessoa1;  //para objetos usa {}
+
+console.log(nome);
+console.log(idade);
+console.log(existe);
+
+//destructuring como parametro
+
+function mostrartPessoaD({nome,idade,existe}){
+    console.log(`Nome: ${nome}`);
+    console.log(`Idade: ${idade}`);
+    console.log(`Existe: ${existe}`);
+}
+
+mostrartPessoaD(pessoa1);
+
+//nested object
+
+console.log("                                     ");
+
+class PessoaDnv{
+    constructor(nome, idade, ...cep){
+        this.nome=nome;
+        this.idade=idade;
+        this.cep=new Cep(...cep);
+    }
+}
+
+class Cep{
+    constructor(pais,estado,cidade){
+        this.pais=pais;
+        this.estado=estado;
+        this.cidade=cidade;
+    }
+}
+
+let dnv=new PessoaDnv("Nome",100,"brasil","sao paulo","sao paulo");
+
+console.log(dnv.nome);

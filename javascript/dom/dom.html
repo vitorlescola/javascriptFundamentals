@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="titulo">Titulo</h1>
+    <div class="itens">Item 1</div>
+    <div class="itens">Item 1</div>
+    <div class="itens">Item 1</div>
+
+    <h4>A</h4>
+    <h4>B</h4>
+
+    <ul id="ulPri">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <ul id="ulSeg">
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+
+    <ul id="ulTer">
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+    </ul>
+
+    <div id="caixa1" class="caixa">
+        <p>Caixa 1</p>
+    </div>
+    <div id="caixa2" class="caixa">
+        <p>Caixa 2</p>
+    </div>
+    <div id="caixa3" class="caixa">
+        <p>Caixa 3</p>
+    </div>
+    <div id="caixa4" class="caixa">
+        <p>Caixa 4</p>
+    </div>
+
+    <div id="caixaClick">Clique aqui! &#128512;</div><br><br>
+    
+    <div id="caixaClickBtn">Clique aqui! &#128512;</div>
+    <button id="btn">Clique aqui</button>
+
+    <div id="mexer">&#128013;</div>
+
+    <br><br><br><button id="esconder">Esconder</button>
+    <img id="img" src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Cham%C3%A4leon1.jpg" alt="Camaleao" width="400px">
+
+    <br><br><button id="btnF">BTN</button>
+
+    <style>
+        .caixa{
+            border: 3px solid black;
+            width: 100%;
+            height: 125px;
+        }
+
+        #caixaClick{
+            background-color: lime;
+            width: 300px;
+            height: 300px;
+            font-size: 4rem;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #caixaClickBtn{
+            background-color: lime;
+            width: 300px;
+            height: 300px;
+            font-size: 4rem;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #btn{
+            font-size: 3rem;
+        }
+
+        #mexer{
+            background-color: lightblue;
+            width: 200px;
+            height: 200px;
+            font-size: 7.5rem;
+            text-align: center;
+            position: relative;
+        }
+
+        #esconder{
+            font-size: 2rem;
+        }
+
+        #btnF{
+            font-size: 4rem;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+        }
+
+        .enable{
+            background-color: blueviolet;
+            color: white;
+        }
+
+        .hover{
+            box-shadow: 0 0 10px;
+            font-weight: bold;
+        }
+
+        .disable{
+            background-color: rgb(87, 24, 146);
+            color: rgb(168, 164, 164);
+        }
+    </style>
+
+    <script src="dom.js"></script>
+</body>
+</html>

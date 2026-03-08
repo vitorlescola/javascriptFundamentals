@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    background: url("https://www.correiobraziliense.com.br/cbradar/wp-content/uploads/2025/06/maringa-parana_1749615198902.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#relogioContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#relogio{
+    font-family: monospace;
+    font-size: 6.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(5px);
+    background-color: hsla(0, 0%, 100%,0.1);
+}

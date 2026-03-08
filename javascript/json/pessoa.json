@@ -1,0 +1,6 @@
+{
+    "nome":"Fulano",
+    "idade":20,
+    "existe":true,
+    "vetor":["a","b","c"]
+}
